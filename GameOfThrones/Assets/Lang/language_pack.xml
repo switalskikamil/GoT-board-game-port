@@ -1,0 +1,234 @@
+<LANGUAGE_PACK>
+	<LANGUAGE name="POLISH">
+		<LANGUAGE_DISPLAY>Polski</LANGUAGE_DISPLAY>
+		<GAME_LANGUAGE>Język gry</GAME_LANGUAGE>
+		<LABEL_RESOURCES>Zasoby</LABEL_RESOURCES>
+		<LABEL_ARMY>Armia</LABEL_ARMY>
+		<LABEL_FORTIFICATIONS>Fortyfikacje</LABEL_FORTIFICATIONS>
+		<LABEL_HOUSE>Ród</LABEL_HOUSE>
+		<LABEL_INFLUENCE_TRACKS>Tory wpływów</LABEL_INFLUENCE_TRACKS>
+		<LABEL_WILDLINGS>Dzicy</LABEL_WILDLINGS>
+		<LABEL_WILDLINGS_STR>Siła</LABEL_WILDLINGS_STR>
+		<LABEL_KINGDOM>Królestwo</LABEL_KINGDOM>
+		<LABEL_OPPONENTS>Przeciwnicy</LABEL_OPPONENTS>
+		<LABEL_SUPPLY>Zaopatrzenie</LABEL_SUPPLY>
+		<LABEL_GAMEROUND>Tury gry</LABEL_GAMEROUND>
+		<LABEL_GAMEROUND_NO>Tura</LABEL_GAMEROUND_NO>
+		<LABEL_GAMEROUND_PHASE>Faza tury</LABEL_GAMEROUND_PHASE>
+		<LABEL_GAME_LOG>Log zdarzeń</LABEL_GAME_LOG>
+		<ORDER_MARCH>Marsz</ORDER_MARCH>
+		<ORDER_RAID>Najazd</ORDER_RAID>
+		<ORDER_SUPPORT>Wsparcie</ORDER_SUPPORT>
+		<ORDER_DEFENSE>Obrona</ORDER_DEFENSE>
+		<ORDER_CONSOLIDATE>Umocnienie władzy</ORDER_CONSOLIDATE>
+		<ORDER_NONE>Brak rozkazu</ORDER_NONE>
+		<SHOW_OWNER_COLOR_INDICATOR>Oznacz strefy kontroli graczy</SHOW_OWNER_COLOR_INDICATOR>
+		<SHOW_OPONENTS>Pokaż rywali</SHOW_OPONENTS>
+		<GAME_PHASE_01>Karty westeros</GAME_PHASE_01>
+		<GAME_PHASE_02>Wydawanie rozkazów</GAME_PHASE_02>
+		<GAME_PHASE_03>Najazdy</GAME_PHASE_03>
+		<GAME_PHASE_04>Marsze</GAME_PHASE_04>
+		<GAME_PHASE_05>Umocnienie Władzy</GAME_PHASE_05>
+		<CARD_BARA_STANNIS_LABEL>Stannis Baratheon</CARD_BARA_STANNIS_LABEL>
+		<CARD_BARA_STANNIS_DESCR>Jeśli twój przciwnik posiada wyższą do ciebie pozycje na torze Żelaznego Tronu, ta karta otrzymuje +1 do siły.</CARD_BARA_STANNIS_DESCR>
+		<CARD_BARA_MELISANDRE_LABEL>Melisandre</CARD_BARA_MELISANDRE_LABEL>
+		<CARD_BARA_MELISANDRE_DESCR></CARD_BARA_MELISANDRE_DESCR>
+		<CARD_BARA_DAVOS_LABEL>Ser Davos Seaworth</CARD_BARA_DAVOS_LABEL>
+		<CARD_BARA_DAVOS_DESCR>Jeśli twoja karta Rodu "Stannis Baratheon" znajduje się na stosie kart odrzuconych, ta karta otrzymuje +1 do siły i symbol miecza.</CARD_BARA_DAVOS_DESCR>
+		<CARD_BARA_SALLADHOR_LABEL>Salladhor Saan</CARD_BARA_SALLADHOR_LABEL>
+		<CARD_BARA_SALLADHOR_DESCR>Jeśli w tej bitwie otrzymujesz wsparcie, siła wszystkich nie należących do Baratheonów jednostek Statków spada do 0.</CARD_BARA_SALLADHOR_DESCR>
+		<CARD_BARA_RENLY_LABEL>Renly Baratheon</CARD_BARA_RENLY_LABEL>
+		<CARD_BARA_RENLY_DESCR>Jeśli wygrasz tę bitwę, możesz ulepszyć jedną z biorących w niej udział jednostek Piechurów (lub jedną ze wspierających jednostek piechurów Baratheonów) w jednostę Rycerzy.</CARD_BARA_RENLY_DESCR>
+		<CARD_BARA_PATCHFACE_LABEL>Plama</CARD_BARA_PATCHFACE_LABEL>
+		<CARD_BARA_PATCHFACE_DESCR>Po bitwie możesz przejrzeć karty na ręce przeciwnika i odrzucić z nich jedną wybraną kartę.</CARD_BARA_PATCHFACE_DESCR>
+		<CARD_BARA_BRIENNE_LABEL>Brienne z Tarth</CARD_BARA_BRIENNE_LABEL>
+		<CARD_BARA_BRIENNE_DESCR></CARD_BARA_BRIENNE_DESCR>
+		<CARD_LANI_CERSEI_LABEL>Cersei Lannister</CARD_LANI_CERSEI_LABEL>
+		<CARD_LANI_CERSEI_DESCR>Jeśli wygrasz tę bitwę, możesz usunąć z planszy jeden dowolny żeton rozkazu pokonanego przeciwnika.</CARD_LANI_CERSEI_DESCR>
+		<CARD_LANI_KEVAN_LABEL>Ser Kevan Lannister</CARD_LANI_KEVAN_LABEL>
+		<CARD_LANI_KEVAN_DESCR>Jeśli atakujesz, wszystkie twoje biorące udział w bitwie jednostki Piechurów (w tym wspierające jednostki Piechurów Lannisterów) zapewniają premię do siły +2, a nie +1.</CARD_LANI_KEVAN_DESCR>
+		<CARD_LANI_JAIME_LABEL>Ser Jaime Lannister</CARD_LANI_JAIME_LABEL>
+		<CARD_LANI_JAIME_DESCR></CARD_LANI_JAIME_DESCR>
+		<CARD_LANI_HOUND_LABEL>Ogar</CARD_LANI_HOUND_LABEL>
+		<CARD_LANI_HOUND_DESCR></CARD_LANI_HOUND_DESCR>	
+		<CARD_LANI_TYWIN_LABEL>Tywin Lannister</CARD_LANI_TYWIN_LABEL>
+		<CARD_LANI_TYWIN_DESCR>Jeśli wygrasz tę bitwę, otrzymasz 2 żetony Władzy.</CARD_LANI_TYWIN_DESCR>	
+		<CARD_LANI_GREGOR_LABEL>Ser Gregor Clegane</CARD_LANI_GREGOR_LABEL>
+		<CARD_LANI_GREGOR_DESCR></CARD_LANI_GREGOR_DESCR>
+		<CARD_LANI_TYRION_LABEL>Tyrion Lannister</CARD_LANI_TYRION_LABEL>
+		<CARD_LANI_TYRION_DESCR>Możesz natychmiast anulować wybraną przez przeciwnika kartę Rodu i cofnąć ją na jego rękę. Musi on wybrać i ujawnić inną kartę Rodu. Jeśli nie posiada innej karty Rodu na ręce, podczas tej bitwy nie może wykorzystać karty Rodu.</CARD_LANI_TYRION_DESCR>
+		<CARD_MART_OBARA_LABEL>Obara Sand</CARD_MART_OBARA_LABEL>
+		<CARD_MART_OBARA_DESCR></CARD_MART_OBARA_DESCR>
+		<CARD_MART_NYMERIA_LABEL>Nymeria Sand</CARD_MART_NYMERIA_LABEL>
+		<CARD_MART_NYMERIA_DESCR>Jeśli się bronisz ta karta otrzymuje symbol fortyfikacji. Jeśli atakujesz ta karta otrzymuje symbol miecza.</CARD_MART_NYMERIA_DESCR>	
+		<CARD_MART_ARIANNE_LABEL>Arianne Martell</CARD_MART_ARIANNE_LABEL>
+		<CARD_MART_ARIANNE_DESCR>Jeśli się bronisz i przegrasz tę bitwę, twój przeciwnik nie może przesunąć swoich jednostek na obszar ogarnięty bitwą. Zamiast tego wracają one na obszar, z którego przybyły. Twoje własne jednostki nadal muszą przeprowadzić odwrót.</CARD_MART_ARIANNE_DESCR>	
+		<CARD_MART_DORAN_LABEL>Doran Martell</CARD_MART_DORAN_LABEL>
+		<CARD_MART_DORAN_DESCR>Natychmiast przesuń jeden z żetonów swojego przeciwnika na najniższą pozycję wybranego przez ciebie toru Wpływów.</CARD_MART_DORAN_DESCR>
+		<CARD_MART_DARKSTAR_LABEL>Ciemna Gwiazda</CARD_MART_DARKSTAR_LABEL>
+		<CARD_MART_DARKSTAR_DESCR></CARD_MART_DARKSTAR_DESCR>
+		<CARD_MART_AREO_LABEL>Areo Hotah</CARD_MART_AREO_LABEL>
+		<CARD_MART_AREO_DESCR></CARD_MART_AREO_DESCR>	
+		<CARD_MART_OBERYN_LABEL>Czerwona Żmija</CARD_MART_OBERYN_LABEL>
+		<CARD_MART_OBERYN_DESCR></CARD_MART_OBERYN_DESCR>	
+		<CARD_STAR_EDDARD_LABEL>Eddard Stark</CARD_STAR_EDDARD_LABEL>
+		<CARD_STAR_EDDARD_DESCR></CARD_STAR_EDDARD_DESCR>
+		<CARD_STAR_GREATJON_LABEL>Greatjon Umber</CARD_STAR_GREATJON_LABEL>
+		<CARD_STAR_GREATJON_DESCR></CARD_STAR_GREATJON_DESCR>
+		<CARD_STAR_ROOSE_LABEL>Roose Bolton</CARD_STAR_ROOSE_LABEL>
+		<CARD_STAR_ROOSE_DESCR>Jeśli przegrasz tę bitwę, weź cały swój stos odrzuconych kart Rodu na rękę (razem z tą kartą).</CARD_STAR_ROOSE_DESCR>	
+		<CARD_STAR_ROBB_LABEL>Robb Stark</CARD_STAR_ROBB_LABEL>
+		<CARD_STAR_ROBB_DESCR>Jeśli wygrasz tę bitwę, możesz wybrać obszar, na który twój przeciwnik przeprowadzi odwrót. Musisz wybrać zgodny z zasadmi obszar, na którym przeciwnik straci najmniej jednostek.</CARD_STAR_ROBB_DESCR>		
+		<CARD_STAR_RODRICK_LABEL>Ser Rodrick Cassel</CARD_STAR_RODRICK_LABEL>
+		<CARD_STAR_RODRICK_DESCR></CARD_STAR_RODRICK_DESCR>		
+		<CARD_STAR_BLACKFISH_LABEL>Blackfish</CARD_STAR_BLACKFISH_LABEL>
+		<CARD_STAR_BLACKFISH_DESCR>Podczas tej bitwy nie otrzymujesz strat wynikających ze zdolności kart Rodów, symboli bitwy ani kart Losów Bitwy.</CARD_STAR_BLACKFISH_DESCR>
+		<CARD_STAR_CATELYN_LABEL>Catelyn Stark</CARD_STAR_CATELYN_LABEL>
+		<CARD_STAR_CATELYN_DESCR>Jeśli na obszarze ogarniętym bitwą posiadasz żeton Obrony, jego wartość ulega podwojeniu.</CARD_STAR_CATELYN_DESCR>
+		<CARD_GREY_DAGMER_LABEL>Dagmer Rozcięta Gęba</CARD_GREY_DAGMER_LABEL>
+		<CARD_GREY_DAGMER_DESCR></CARD_GREY_DAGMER_DESCR>	
+		<CARD_GREY_ASHA_LABEL>Asha Greyjoy</CARD_GREY_ASHA_LABEL>
+		<CARD_GREY_ASHA_DESCR>Jeśli w tej bitwie nie otrzymujesz wsparcia, ta karta otrzymuje dwa symbole miecza i symbol fortyfikacji.</CARD_GREY_ASHA_DESCR>	
+		<CARD_GREY_BALON_LABEL>Balon Greyjoy</CARD_GREY_BALON_LABEL>
+		<CARD_GREY_BALON_DESCR>Wydrukowana siła karty Rodu twojego przeciwnika spada do 0.</CARD_GREY_BALON_DESCR>	
+		<CARD_GREY_THEON_LABEL>Theon Greyjoy</CARD_GREY_THEON_LABEL>
+		<CARD_GREY_THEON_DESCR>Jeśli bronisz obszaru, na którym znajduje się Twierdza lub Zamek, ta karta otrzymuje +1 do siły i symbol miecza.</CARD_GREY_THEON_DESCR>
+		<CARD_GREY_VICTARION_LABEL>Victarion Greyjoy</CARD_GREY_VICTARION_LABEL>
+		<CARD_GREY_VICTARION_DESCR>Jeśli atakujesz, wszystkie twoje biorące udział w bitwie jednostki Statków (w tym wspierające jednostki Statków Greyjoyów) zapewniają premię do siły +2, a nie +1.</CARD_GREY_VICTARION_DESCR>	
+		<CARD_GREY_AERON_LABEL>Aeron Mokra Czupryna</CARD_GREY_AERON_LABEL>
+		<CARD_GREY_AERON_DESCR>Możesz natychmiast odrzucić dwa ze swoich dostępnych żetonów władzy aby odrzucić Aerona Mokrą Czuprynę i wybrać inną kartę Rodu (jeśli jakąś jeszcze posiadasz).</CARD_GREY_AERON_DESCR>	
+		<CARD_GREY_EURON_LABEL>Euron Wronie Oko</CARD_GREY_EURON_LABEL>
+		<CARD_GREY_EURON_DESCR></CARD_GREY_EURON_DESCR>
+		<CARD_TYRE_ALESTER_LABEL>Alester Florent</CARD_TYRE_ALESTER_LABEL>
+		<CARD_TYRE_ALESTER_DESCR></CARD_TYRE_ALESTER_DESCR>
+		<CARD_TYRE_LORAS_LABEL>Ser Loras Tyrell</CARD_TYRE_LORAS_LABEL>
+		<CARD_TYRE_LORAS_DESCR>Jeśli atakujesz i wygrasz tę bitwę, przesuń żeton Marszu na podbity obszar (zamiast go odrzucać). Podczas tej rundy będziesz mógł go rozpatrzyć ponownie.</CARD_TYRE_LORAS_DESCR>
+		<CARD_TYRE_MARGAERY_LABEL>Margaery Tyrell</CARD_TYRE_MARGAERY_LABEL>
+		<CARD_TYRE_MARGAERY_DESCR></CARD_TYRE_MARGAERY_DESCR>
+		<CARD_TYRE_RANDYLL_LABEL>Randyll Tarly</CARD_TYRE_RANDYLL_LABEL>
+		<CARD_TYRE_RANDYLL_DESCR></CARD_TYRE_RANDYLL_DESCR>
+		<CARD_TYRE_GARLAN_LABEL>Ser Garlan Tyrell</CARD_TYRE_GARLAN_LABEL>
+		<CARD_TYRE_GARLAN_DESCR></CARD_TYRE_GARLAN_DESCR>
+		<CARD_TYRE_OLENNA_LABEL>Królowa Cierni</CARD_TYRE_OLENNA_LABEL>
+		<CARD_TYRE_OLENNA_DESCR>Natychmiast usuń jeden żeton Rozkazu przeciwnika z obszaru siąsiadującego z obszarem ogarniętym bitwą. Nie możesz usunąć żetonu Marszu, który zapoczątkował te bitwę.</CARD_TYRE_OLENNA_DESCR>		
+		<CARD_TYRE_MACE_LABEL>Mace Tyrell</CARD_TYRE_MACE_LABEL>
+		<CARD_TYRE_MACE_DESCR>Natychmiast zniszcz jedną z atakuących lub broniących się jednostek Piechurów przeciwnika.</CARD_TYRE_MACE_DESCR>																													
+		<LAND_THESTONYSHORE>Kamienny Brzeg</LAND_THESTONYSHORE> 
+	</LANGUAGE>
+	<LANGUAGE name="ENGLISH">
+		<LANGUAGE_DISPLAY>English</LANGUAGE_DISPLAY>
+		<GAME_LANGUAGE>Game language</GAME_LANGUAGE>
+		<LABEL_RESOURCES>Resources</LABEL_RESOURCES>
+		<LABEL_ARMY>Army</LABEL_ARMY>
+		<LABEL_FORTIFICATIONS>Fortifications</LABEL_FORTIFICATIONS>	
+		<LABEL_HOUSE>House</LABEL_HOUSE>	
+		<LABEL_INFLUENCE_TRACKS>Influence Tracks</LABEL_INFLUENCE_TRACKS>
+		<LABEL_WILDLINGS>Wildlings</LABEL_WILDLINGS>
+		<LABEL_WILDLINGS_STR>Strength</LABEL_WILDLINGS_STR>
+		<LABEL_KINGDOM>Kingdom</LABEL_KINGDOM>
+		<LABEL_OPPONENTS>Opponents</LABEL_OPPONENTS>
+		<LABEL_SUPPLY>Supply Track</LABEL_SUPPLY>
+		<LABEL_GAMEROUND>Game Rounds</LABEL_GAMEROUND>
+		<LABEL_GAMEROUND_NO>Round</LABEL_GAMEROUND_NO>
+		<LABEL_GAMEROUND_PHASE>Round Phase</LABEL_GAMEROUND_PHASE>
+		<LABEL_GAME_LOG>Event Log</LABEL_GAME_LOG>
+		<ORDER_MARCH>March</ORDER_MARCH>
+		<ORDER_RAID>Raid</ORDER_RAID>
+		<ORDER_SUPPORT>Support</ORDER_SUPPORT>
+		<ORDER_DEFENSE>Defense</ORDER_DEFENSE>
+		<ORDER_CONSOLIDATE>Consolidate Power</ORDER_CONSOLIDATE>
+		<ORDER_NONE>No order</ORDER_NONE>
+		<SHOW_OWNER_COLOR_INDICATOR>Mark players zone of control</SHOW_OWNER_COLOR_INDICATOR>
+		<SHOW_OPONENTS>Show oponents</SHOW_OPONENTS>
+		<GAME_PHASE_01>Cards of Westeros</GAME_PHASE_01>
+		<GAME_PHASE_02>Orders placement</GAME_PHASE_02>
+		<GAME_PHASE_03>Raids</GAME_PHASE_03>
+		<GAME_PHASE_04>Marches</GAME_PHASE_04>
+		<GAME_PHASE_05>Consolidate Power</GAME_PHASE_05>
+		<CARD_BARA_STANNIS_LABEL>Stannis Baratheon</CARD_BARA_STANNIS_LABEL>
+		<CARD_BARA_STANNIS_DESCR>If your oppenent has higher position on the Iron Throne influence Track than you, this card gains +1 combat strength.</CARD_BARA_STANNIS_DESCR>
+		<CARD_BARA_MELISANDRE_LABEL>Melisandre</CARD_BARA_MELISANDRE_LABEL>
+		<CARD_BARA_MELISANDRE_DESCR></CARD_BARA_MELISANDRE_DESCR>
+		<CARD_BARA_DAVOS_LABEL>Ser Davos Seaworth</CARD_BARA_DAVOS_LABEL>
+		<CARD_BARA_DAVOS_DESCR>If your "Stannis Baratheon" House card is in your discard pile, this card gains +1 combat strength and a sword icon.</CARD_BARA_DAVOS_DESCR>
+		<CARD_BARA_SALLADHOR_LABEL>Salladhor Saan</CARD_BARA_SALLADHOR_LABEL>
+		<CARD_BARA_SALLADHOR_DESCR>If you are being supported in this combat, combat strength of all non-Baratheon Ships is reduced to 0.</CARD_BARA_SALLADHOR_DESCR>
+		<CARD_BARA_RENLY_LABEL>Renly Baratheon</CARD_BARA_RENLY_LABEL>
+		<CARD_BARA_RENLY_DESCR>If you win this combat, you may upgrade one of your participating Footmen (or one supporting Baratheon Footmen) to a Knight.</CARD_BARA_RENLY_DESCR>	
+		<CARD_BARA_PATCHFACE_LABEL>Patchface</CARD_BARA_PATCHFACE_LABEL>
+		<CARD_BARA_PATCHFACE_DESCR>After combat you may look at your opponent's hand and discard one card of your choice.</CARD_BARA_PATCHFACE_DESCR>	
+		<CARD_BARA_BRIENNE_LABEL>Brienne of Tarth</CARD_BARA_BRIENNE_LABEL>
+		<CARD_BARA_BRIENNE_DESCR></CARD_BARA_BRIENNE_DESCR>	
+		<CARD_LANI_CERSEI_LABEL>Cersei Lannister</CARD_LANI_CERSEI_LABEL>
+		<CARD_LANI_CERSEI_DESCR>If you win this combat, you may remove one of the losing opponent's Order tokens from anywhere on the board.</CARD_LANI_CERSEI_DESCR>
+		<CARD_LANI_KEVAN_LABEL>Ser Kevan Lannister</CARD_LANI_KEVAN_LABEL>
+		<CARD_LANI_KEVAN_DESCR>If you are attacking, all of your participating Footmen (including supporting Lannister Footmen) add +2 combat strength instead of +1.</CARD_LANI_KEVAN_DESCR>
+		<CARD_LANI_JAIME_LABEL>Ser Jaime Lannister</CARD_LANI_JAIME_LABEL>
+		<CARD_LANI_JAIME_DESCR></CARD_LANI_JAIME_DESCR>
+		<CARD_LANI_HOUND_LABEL>The Hound</CARD_LANI_HOUND_LABEL>
+		<CARD_LANI_HOUND_DESCR></CARD_LANI_HOUND_DESCR>	
+		<CARD_LANI_TYWIN_LABEL>Tywin Lannister</CARD_LANI_TYWIN_LABEL>
+		<CARD_LANI_TYWIN_DESCR>If you win this combat, gain two Power tokens.</CARD_LANI_TYWIN_DESCR>	
+		<CARD_LANI_GREGOR_LABEL>Ser Gregor Clegane</CARD_LANI_GREGOR_LABEL>
+		<CARD_LANI_GREGOR_DESCR></CARD_LANI_GREGOR_DESCR>
+		<CARD_LANI_TYRION_LABEL>Tyrion Lannister</CARD_LANI_TYRION_LABEL>
+		<CARD_LANI_TYRION_DESCR>You may immediately cancel your opponent's chosen House card and return it to his hand. He must choose a different House card to reveal. If he has no other House card in hand, he cannot use a House card this combat.</CARD_LANI_TYRION_DESCR>
+		<CARD_MART_OBARA_LABEL>Obara Sand</CARD_MART_OBARA_LABEL>
+		<CARD_MART_OBARA_DESCR></CARD_MART_OBARA_DESCR>
+		<CARD_MART_NYMERIA_LABEL>Nymeria Sand</CARD_MART_NYMERIA_LABEL>
+		<CARD_MART_NYMERIA_DESCR>If you are defending, this card gains a fortification icon. If you are attacking this card gains a sword icon.</CARD_MART_NYMERIA_DESCR>	
+		<CARD_MART_ARIANNE_LABEL>Arianne Martell</CARD_MART_ARIANNE_LABEL>
+		<CARD_MART_ARIANNE_DESCR>If you are defending and lose this combat, your opponent may not move his units into embattled area. They return to the area from which they marched. Your own units must still retreat.</CARD_MART_ARIANNE_DESCR>	
+		<CARD_MART_DORAN_LABEL>Doran Martell</CARD_MART_DORAN_LABEL>
+		<CARD_MART_DORAN_DESCR>Immediately move your opponent to the bottom of one influence track of your choice.</CARD_MART_DORAN_DESCR>
+		<CARD_MART_DARKSTAR_LABEL>Darkstar</CARD_MART_DARKSTAR_LABEL>
+		<CARD_MART_DARKSTAR_DESCR></CARD_MART_DARKSTAR_DESCR>
+		<CARD_MART_AREO_LABEL>Areo Hotah</CARD_MART_AREO_LABEL>
+		<CARD_MART_AREO_DESCR></CARD_MART_AREO_DESCR>	
+		<CARD_MART_OBERYN_LABEL>Red Viper</CARD_MART_OBERYN_LABEL>
+		<CARD_MART_OBERYN_DESCR></CARD_MART_OBERYN_DESCR>	
+		<CARD_STAR_EDDARD_LABEL>Eddard Stark</CARD_STAR_EDDARD_LABEL>
+		<CARD_STAR_EDDARD_DESCR></CARD_STAR_EDDARD_DESCR>
+		<CARD_STAR_GREATJON_LABEL>Greatjon Umber</CARD_STAR_GREATJON_LABEL>
+		<CARD_STAR_GREATJON_DESCR></CARD_STAR_GREATJON_DESCR>
+		<CARD_STAR_ROOSE_LABEL>Roose Bolton</CARD_STAR_ROOSE_LABEL>
+		<CARD_STAR_ROOSE_DESCR>If you lose this combat, return your entire House card discard pile into your hand (including this card).</CARD_STAR_ROOSE_DESCR>	
+		<CARD_STAR_ROBB_LABEL>Robb Stark</CARD_STAR_ROBB_LABEL>
+		<CARD_STAR_ROBB_DESCR>If you win this combat, you may choose the area to which your opponent retreats. You must choose a legal area where your opponents loses the fewest units.</CARD_STAR_ROBB_DESCR>		
+		<CARD_STAR_RODRICK_LABEL>Ser Rodrick Cassel</CARD_STAR_RODRICK_LABEL>
+		<CARD_STAR_RODRICK_DESCR></CARD_STAR_RODRICK_DESCR>		
+		<CARD_STAR_BLACKFISH_LABEL>The Blackfish</CARD_STAR_BLACKFISH_LABEL>
+		<CARD_STAR_BLACKFISH_DESCR>You do not take casualties in this combat from House card abilities, Combat icons, or Tides of Battle cards.</CARD_STAR_BLACKFISH_DESCR>
+		<CARD_STAR_CATELYN_LABEL>Catelyn Stark</CARD_STAR_CATELYN_LABEL>
+		<CARD_STAR_CATELYN_DESCR>If you have a Defense Order token in the embattled area, its value is doubled.</CARD_STAR_CATELYN_DESCR>
+		<CARD_GREY_DAGMER_LABEL>Dagmer Cleftjaw</CARD_GREY_DAGMER_LABEL>
+		<CARD_GREY_DAGMER_DESCR></CARD_GREY_DAGMER_DESCR>	
+		<CARD_GREY_ASHA_LABEL>Asha Greyjoy</CARD_GREY_ASHA_LABEL>
+		<CARD_GREY_ASHA_DESCR>If you are not being supported in this combat, this card gains two sword icons and one fortification icon.</CARD_GREY_ASHA_DESCR>	
+		<CARD_GREY_BALON_LABEL>Balon Greyjoy</CARD_GREY_BALON_LABEL>
+		<CARD_GREY_BALON_DESCR>The printed combat strength of your opponent's House card is reduced to 0.</CARD_GREY_BALON_DESCR>	
+		<CARD_GREY_THEON_LABEL>Theon Greyjoy</CARD_GREY_THEON_LABEL>
+		<CARD_GREY_THEON_DESCR>If you are defending an area that contains either a Stronghold or a Castle this card gains +1 combat strength and a sword icon.</CARD_GREY_THEON_DESCR>
+		<CARD_GREY_VICTARION_LABEL>Victarion Greyjoy</CARD_GREY_VICTARION_LABEL>
+		<CARD_GREY_VICTARION_DESCR>If you are attacking, all of your participating Ships (including supporting Greyjoy Ships) add +2 to combat Strength instead of +1.</CARD_GREY_VICTARION_DESCR>	
+		<CARD_GREY_AERON_LABEL>Aeron Damphair</CARD_GREY_AERON_LABEL>
+		<CARD_GREY_AERON_DESCR>You may immediately discard two of your available Power tokens to discard Aeron Damphair and choose a different House card from your hand (if able). </CARD_GREY_AERON_DESCR>	
+		<CARD_GREY_EURON_LABEL>Euron Crow's Eye</CARD_GREY_EURON_LABEL>
+		<CARD_GREY_EURON_DESCR></CARD_GREY_EURON_DESCR>
+		<CARD_TYRE_ALESTER_LABEL>Alester Florent</CARD_TYRE_ALESTER_LABEL>
+		<CARD_TYRE_ALESTER_DESCR></CARD_TYRE_ALESTER_DESCR>
+		<CARD_TYRE_LORAS_LABEL>Ser Loras Tyrell</CARD_TYRE_LORAS_LABEL>
+		<CARD_TYRE_LORAS_DESCR>If you are attacking and win this combat, move the March Order token into then conquered area (instead of discarding it). The March Order may be resolved again later this round.</CARD_TYRE_LORAS_DESCR>
+		<CARD_TYRE_MARGAERY_LABEL>Margaery Tyrell</CARD_TYRE_MARGAERY_LABEL>
+		<CARD_TYRE_MARGAERY_DESCR></CARD_TYRE_MARGAERY_DESCR>
+		<CARD_TYRE_RANDYLL_LABEL>Randyll Tarly</CARD_TYRE_RANDYLL_LABEL>
+		<CARD_TYRE_RANDYLL_DESCR></CARD_TYRE_RANDYLL_DESCR>
+		<CARD_TYRE_GARLAN_LABEL>Ser Garlan Tyrell</CARD_TYRE_GARLAN_LABEL>
+		<CARD_TYRE_GARLAN_DESCR></CARD_TYRE_GARLAN_DESCR>
+		<CARD_TYRE_OLENNA_LABEL>Queen of Thorns</CARD_TYRE_OLENNA_LABEL>
+		<CARD_TYRE_OLENNA_DESCR>Immediately remove one of your opponent's Order tokens in any one area adjacent to the embattled area. You may not remove the March Order token used to start this combat.</CARD_TYRE_OLENNA_DESCR>		
+		<CARD_TYRE_MACE_LABEL>Mace Tyrell</CARD_TYRE_MACE_LABEL>
+		<CARD_TYRE_MACE_DESCR>Immediately destroy one of your opponent's attacking or defending Footmen units.</CARD_TYRE_MACE_DESCR>									
+		<LAND_THESTONYSHORE>The Stony Shore</LAND_THESTONYSHORE>
+	</LANGUAGE>
+</LANGUAGE_PACK>

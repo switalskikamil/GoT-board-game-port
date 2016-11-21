@@ -1,0 +1,125 @@
+﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+
+//[System.Serializable]
+public class Card : MonoBehaviour {
+
+	#region CARD_IDs
+	public enum CardID {
+		CARD_BARA_STANNIS,
+		CARD_BARA_MELISANDRE,
+		CARD_BARA_DAVOS,
+		CARD_BARA_SALLADHOR,
+		CARD_BARA_RENLY,
+		CARD_BARA_PATCHFACE,
+		CARD_BARA_BRIENNE,
+
+		CARD_LANI_CERSEI,
+		CARD_LANI_KEVAN,
+		CARD_LANI_JAIME,
+		CARD_LANI_HOUND,
+		CARD_LANI_TYWIN,
+		CARD_LANI_GREGOR,
+		CARD_LANI_TYRION,
+
+		CARD_MART_OBARA,
+		CARD_MART_NYMERIA,
+		CARD_MART_ARIANNE,
+		CARD_MART_DORAN,
+		CARD_MART_DARKSTAR,
+		CARD_MART_AREO,
+		CARD_MART_OBERYN,
+
+		CARD_STAR_EDDARD,
+		CARD_STAR_GREATJON,
+		CARD_STAR_ROOSE,
+		CARD_STAR_ROBB,
+		CARD_STAR_RODRICK,
+		CARD_STAR_BLACKFISH,
+		CARD_STAR_CATELYN,
+
+		CARD_GREY_DAGMER,
+		CARD_GREY_ASHA,
+		CARD_GREY_BALON,
+		CARD_GREY_THEON,
+		CARD_GREY_VICTARION,
+		CARD_GREY_AERON,
+		CARD_GREY_EURON,
+
+		CARD_TYRE_ALESTER,
+		CARD_TYRE_LORAS,
+		CARD_TYRE_MARGAERY,
+		CARD_TYRE_RANDYLL,
+		CARD_TYRE_GARLAN,
+		CARD_TYRE_OLENNA,
+		CARD_TYRE_MACE,
+
+		CARD_WILD_SKINCHANGER_SCOUT,
+		CARD_WILD_KING_BEYOND_WALL,
+		CARD_WILD_CROW_KILLERS,
+		CARD_WILD_RATTLESHIRT_RAIDERS,
+		CARD_WILD_HORDE_DESCENDS,
+		CARD_WILD_SILENCE_AT_WALL,
+		CARD_WILD_MASSING_MILKWATER,
+		CARD_WILD_PREEMPTIVE_RAID,
+		CARD_WILD_MAMMOTH_RAIDERS,
+
+		CARD_WEST_1_WINTER_IS_COMMING,
+		CARD_WEST_1_LAST_DAYS_OF_SUMMER,
+		CARD_WEST_1_MUSTERING, /* 3 */
+		CARD_WEST_1_SUPPLY, /* 3 */
+		CARD_WEST_1_THRONE_OF_BLADES, /* 2 */
+
+		CARD_WEST_2_WINTER_IS_COMMING,
+		CARD_WEST_2_LAST_DAYS_OF_SUMMER,
+		CARD_WEST_2_GAME_OF_THRONES, /* 3 */
+		CARD_WEST_2_CLASH_OF_KINGS, /* 3 */
+		CARD_WEST_2_DARK_WINGS, /* 2 */
+
+		CARD_WEST_3_WILDLINGS_ATTACK, /* 3 */
+		CARD_WEST_3_RAINS_OF_AUTUMN,
+		CARD_WEST_3_STORM_OF_SWORDS,
+		CARD_WEST_3_SEA_OF_STORMS,
+		CARD_WEST_3_FEAST_FOR_CROWS,
+		CARD_WEST_3_WEB_OF_LIES,
+		CARD_WEST_3_PUT_TO_SWORD /* 2 */
+
+
+
+	}
+
+	#endregion
+
+	public enum CardState {
+		cs_cardInHand,
+		cs_cardInDiscard,
+		cs_cardDisabled,
+		cs_cardHidden,
+		cs_cardShown
+	}
+
+	public Sprite cardSprite;
+	public string cardLabel;
+	public string cardDescription;
+
+	public bool hasWildlingsMark;
+	public int swordsIcons;
+	public int towersIcons;
+	public int combatStr;
+
+	public CardID cardID;
+
+	public CardState cardState;
+
+
+	// Use this for initialization
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
+}
