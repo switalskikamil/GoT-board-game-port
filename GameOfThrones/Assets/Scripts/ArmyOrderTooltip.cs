@@ -107,7 +107,7 @@ public class ArmyOrderTooltip : MonoBehaviour, IPointerEnterHandler, IPointerExi
 	/// Assigns the order. Takes string verions of enum order. Passes enum value to armyControler.
 	/// </summary>
 	/// <param name="order">String value of enum order type</param>
-	public void assignOrder(string order) {
+	private void assignOrder(string order) {
 		//convert string verions to enum order
 		ArmyControler.ArmyOrderType enumOrder = (ArmyControler.ArmyOrderType) System.Enum.Parse(typeof(ArmyControler.ArmyOrderType), order);
 
@@ -122,25 +122,54 @@ public class ArmyOrderTooltip : MonoBehaviour, IPointerEnterHandler, IPointerExi
 	/// Checks the order availability. Turns on not-availible mark.
 	/// </summary>
 	public void checkOrderAvailability() {
-		//GameObject[] armies = GameObject.FindGameObjectsWithTag("Army");
 
 		//at first enable all buttons
 		enableAllButtons();
 
-		//TODO: check number of availible special orders, and number of already used availible orders
+	
+		int availibleSpecialOrders = armyControler.owner.getNumberOfSpecialOrders();
+
+		//if player can't use special orders, just block them
+		//also block if player already used all special orders availible for him
+		//but only block unused special orders
+		if (availibleSpecialOrders == 0 || availibleSpecialOrders == armyControler.owner.UsedSpecialOrders) {
+			armyControler.owner.lockOrder(new Player.ArmyOrders(ArmyControler.ArmyOrderType.aoConsolidate_special, false, true));
+			armyControler.owner.lockOrder(new Player.ArmyOrders(ArmyControler.ArmyOrderType.aoMarch_special, false, true));
+			armyControler.owner.lockOrder(new Player.ArmyOrders(ArmyControler.ArmyOrderType.aoSupport_special, false, true));
+			armyControler.owner.lockOrder(new Player.ArmyOrders(ArmyControler.ArmyOrderType.aoDefense_special, false, true));
+			armyControler.owner.lockOrder(new Player.ArmyOrders(ArmyControler.ArmyOrderType.aoRaid_special, false, true));
+		} else {
+			//if special orders were blocked, now ublock them
+			//but check if they were used before unblocking
+			armyControler.owner.lockOrder(new Player.ArmyOrders(ArmyControler.ArmyOrderType.aoConsolidate_special, armyControler.owner.checkOrderUse(ArmyControler.ArmyOrderType.aoConsolidate_special), false));
+			armyControler.owner.lockOrder(new Player.ArmyOrders(ArmyControler.ArmyOrderType.aoMarch_special, armyControler.owner.checkOrderUse(ArmyControler.ArmyOrderType.aoMarch_special), false));
+			armyControler.owner.lockOrder(new Player.ArmyOrders(ArmyControler.ArmyOrderType.aoSupport_special, armyControler.owner.checkOrderUse(ArmyControler.ArmyOrderType.aoSupport_special), false));
+			armyControler.owner.lockOrder(new Player.ArmyOrders(ArmyControler.ArmyOrderType.aoDefense_special, armyControler.owner.checkOrderUse(ArmyControler.ArmyOrderType.aoDefense_special), false));
+			armyControler.owner.lockOrder(new Player.ArmyOrders(ArmyControler.ArmyOrderType.aoRaid_special, armyControler.owner.checkOrderUse(ArmyControler.ArmyOrderType.aoRaid_special), false));
+		}
+
+
+		//loop thru a list in gamecontroler
+		foreach (Player.ArmyOrders a in GC.blockedTypeOfOrders) {
+			armyControler.owner.lockOrder(a);
+		}
+
+
 
 		//check players list for already locked orders
-		foreach (ArmyControler.ArmyOrderType a in armyControler.owner.getLockedOrders()) {
-			findAndDisableBtn(a);
+		foreach (Player.ArmyOrders a in armyControler.owner.getLockedOrders()) {
+			findAndDisableBtn(a.orderType, a.blocked);
 		}
 		
 	}
 
+
 	/// <summary>
-	/// Finds and disables button.
+	/// Finds the and disable button.
 	/// </summary>
-	/// <param name="a">army order type</param>
-	public void findAndDisableBtn(ArmyControler.ArmyOrderType a) {
+	/// <param name="a">Army Order Type</param>
+	/// <param name="isBlocked">If set to <c>true</c> is blocked.</param>
+	private void findAndDisableBtn(ArmyControler.ArmyOrderType a, bool isBlocked = false) {
 
 		//get list of all buttons in children list of this panel
 		OrderButton[] orderButtons = gameObject.GetComponentsInChildren<OrderButton>();
@@ -149,7 +178,7 @@ public class ArmyOrderTooltip : MonoBehaviour, IPointerEnterHandler, IPointerExi
 			//disable button by a given type
 			if (ob.armyOrderType == a) {
 				//Debug.Log("disable : " + a.ToString());
-				ob.disableButton();
+				ob.disableButton(isBlocked);
 			}
 		}
 	}
@@ -181,5 +210,7 @@ public class ArmyOrderTooltip : MonoBehaviour, IPointerEnterHandler, IPointerExi
 		}
 	
 	}
+
+
 
 }

@@ -32,7 +32,7 @@ public class Land : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//TODO: get land name by a given id
+	
 		GameObject go =  GameObject.FindWithTag("GameController");
 		landName = go.GetComponent<GameControl>().getTranslation(landID);
 	

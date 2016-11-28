@@ -3,14 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-[System.Serializable]
-public class ArmyOrders {
-	public ArmyControler.ArmyOrderType orderType;
-	public bool used;
-	public bool blocked;
-}
+
 
 public class Player : MonoBehaviour {
+
+	[System.Serializable]
+	public class ArmyOrders {
+		public ArmyControler.ArmyOrderType orderType;
+		public bool used;
+		public bool blocked;
+
+		public ArmyOrders (ArmyControler.ArmyOrderType oType, bool isUsed, bool isBlock) {
+			this.orderType = oType;
+			this.used = isUsed;
+			this.blocked = isBlock;
+		}
+	}
 
 	public enum HouseName {
 		Baratheon,
@@ -60,13 +68,24 @@ public class Player : MonoBehaviour {
 	private Color playerColor;
 	private Sprite houseCrest;
 	private Sprite powerTokensIcon;
+	private int _usedSpecialOrders;
+
+	public int UsedSpecialOrders {
+		get {
+			return _usedSpecialOrders;
+		}
+		set {
+			_usedSpecialOrders = Mathf.Clamp(value,0,3);
+		}
+	}
 
 
 	// Use this for initialization
 	void Start () {
 		//get player color
 		GameObject gc = GameObject.FindGameObjectWithTag("GameController");
-		
+
+		//assigning icons depending of chosen house
 		if (gc != null) {
 			if (house == HouseName.Baratheon) {
 				playerColor = gc.GetComponent<GameControl>().BaratheonColor;
@@ -106,15 +125,37 @@ public class Player : MonoBehaviour {
 		
 	}
 
+	/// <summary>
+	/// Recalculation at start of each round
+	/// </summary>
+	public void newRound() {
+		//refresh raven token state
+		refreshRavenTokenState();
 
+		//refresh count of special orders used
+		UsedSpecialOrders = 0;
+	}
+
+	/// <summary>
+	/// Gets the color of the player.
+	/// </summary>
+	/// <returns>The player color.</returns>
 	public Color getPlayerColor() {
 		return playerColor;
 	}
 
+	/// <summary>
+	/// Gets the house crest.
+	/// </summary>
+	/// <returns>The house crest.</returns>
 	public Sprite getHouseCrest() {
 		return houseCrest;
 	}
 
+	/// <summary>
+	/// Gets the house cards in hand.
+	/// </summary>
+	/// <returns>The house cards in hand.</returns>
 	public int getHouseCardsInHand() {
 		Card[] cards = gameObject.GetComponentsInChildren<Card>();
 
@@ -125,6 +166,10 @@ public class Player : MonoBehaviour {
 		return i;
 	}
 
+	/// <summary>
+	/// Gets the power tokens icon.
+	/// </summary>
+	/// <returns>The power tokens icon.</returns>
 	public Sprite getPowerTokensIcon() {
 		return powerTokensIcon;
 	}
@@ -160,12 +205,16 @@ public class Player : MonoBehaviour {
 	/// <param name="orderType">Order type.</param>
 	/// <param name="orderIsUsed">If set to <c>true</c> order is used.</param>
 	/// <param name="orderIsBlocked">If set to <c>true</c> order is blocked.</param>
-	public void lockOrder(ArmyControler.ArmyOrderType orderType, bool orderIsUsed, bool orderIsBlocked) {
+	public void lockOrder(ArmyOrders armyOrder ) {
 		foreach (ArmyOrders a in  armyOrderPack) {
-			if (a.orderType == orderType) {
-				a.blocked = orderIsBlocked;
-				a.used = orderIsUsed;
-				break;
+			if (a.orderType == armyOrder.orderType) {
+
+				//only block if unused
+				if (!a.used) a.blocked = armyOrder.blocked;
+
+				//if we try to block, we also sends used=false so check if it was already used
+				if (armyOrder.blocked && a.used) a.used = true;
+				else a.used = armyOrder.used;
 			}
 		}
 	}
@@ -174,26 +223,23 @@ public class Player : MonoBehaviour {
 	/// Gets the locked orders.
 	/// </summary>
 	/// <returns>The locked orders.</returns>
-	public List<ArmyControler.ArmyOrderType> getLockedOrders() {
+	public List<ArmyOrders> getLockedOrders() {
 
-		List<ArmyControler.ArmyOrderType> lockedOrders = new List<ArmyControler.ArmyOrderType>();
+		List<ArmyOrders> lockedOrders = new List<ArmyOrders>();
 
 		foreach (ArmyOrders a in  armyOrderPack) {
 			if (a.blocked || a.used) {
-				lockedOrders.Add(a.orderType);
+				lockedOrders.Add(a);
 			}
 		}
-
-		//debug
-		/*Debug.Log("Locked Orders: ");
-		foreach (ArmyControler.ArmyOrderType a in lockedOrders) {
-			Debug.Log("  - " + a.ToString());
-		}
-		Debug.Log("---");*/
 
 		return lockedOrders;
 	}
 
+	/// <summary>
+	/// Gets the number of special orders availible for the player. Depends of position on fiefdom track.
+	/// </summary>
+	/// <returns>The number of special orders.</returns>
 	public int getNumberOfSpecialOrders() {
 		int r = 0;
 
@@ -219,6 +265,25 @@ public class Player : MonoBehaviour {
 		default:
 			break;
 		}
+
+		return r;
 	}
+
+	/// <summary>
+	/// Checks the order use.
+	/// </summary>
+	/// <returns><c>true</c>, if order was Used, <c>false</c> otherwise.</returns>
+	/// <param name="ao">Army Order Type</param>
+	public bool checkOrderUse(ArmyControler.ArmyOrderType ao) {
+
+		foreach (ArmyOrders a in  armyOrderPack) {
+			if (a.orderType == ao) {
+				return a.used;
+			}
+		}
+		return false;
+	}
+
+
 
 }

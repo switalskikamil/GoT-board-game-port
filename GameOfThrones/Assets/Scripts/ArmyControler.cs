@@ -45,13 +45,34 @@ public class ArmyControler : MonoBehaviour {
 	/// <param name="aot">new army order type</param>
 	public void changeOrder(ArmyOrderType aot) {
 		//unlock previous order
-		owner.lockOrder(orderAssigned, false, false);
+		owner.lockOrder(new Player.ArmyOrders(orderAssigned, false, false));
 
 		//lock new order
-		owner.lockOrder(aot, true, false);
+		owner.lockOrder(new Player.ArmyOrders(aot, true, false));
+
+		if (aot == ArmyControler.ArmyOrderType.aoConsolidate_special ||
+		    aot == ArmyControler.ArmyOrderType.aoDefense_special ||
+		    aot == ArmyControler.ArmyOrderType.aoMarch_special ||
+		    aot == ArmyControler.ArmyOrderType.aoRaid_special ||
+		    aot == ArmyControler.ArmyOrderType.aoSupport_special) {
+
+			//if we just used a special order
+			owner.UsedSpecialOrders++; 
+		}
+
+		if (orderAssigned == ArmyControler.ArmyOrderType.aoConsolidate_special ||
+		    orderAssigned == ArmyControler.ArmyOrderType.aoDefense_special ||
+		    orderAssigned == ArmyControler.ArmyOrderType.aoMarch_special ||
+		    orderAssigned == ArmyControler.ArmyOrderType.aoRaid_special ||
+		    orderAssigned == ArmyControler.ArmyOrderType.aoSupport_special) {
+			
+			//if we just freed a special order
+			owner.UsedSpecialOrders--; 
+		}
 
 		orderAssigned = aot;
 
+		//assaign icon and text of new order
 		foreach (GameControl.ArmyOrderTxt o in GC.armyOrderIconPack) {
 			if (o.orderType == aot) {
 				orderAssignedBtn.image.sprite = o.orderIcon;

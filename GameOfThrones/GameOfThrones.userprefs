@@ -1,9 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ArmyOrderTooltip.cs">
     <Files>
-      <File FileName="Assets\Scripts\ArmyControler.cs" Line="18" Column="16" />
-      <File FileName="Assets\Scripts\ArmyOrderTooltip.cs" Line="147" Column="1" />
+      <File FileName="Assets\Scripts\ArmyControler.cs" Line="54" Column="3" />
+      <File FileName="Assets\Scripts\Player.cs" Line="216" Column="30" />
+      <File FileName="Assets\Scripts\ArmyOrderTooltip.cs" Line="136" Column="59" />
       <File FileName="Assets\Scripts\LogPanelControl.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PanelSlider.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\DeckViewerControl.cs" Line="1" Column="1" />
@@ -11,9 +12,8 @@
       <File FileName="Assets\Scripts\PlayerPanelControl.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GameRoundPanelControl.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\InfluenceTrackPanelControl.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GameControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameControl.cs" Line="67" Column="85" />
       <File FileName="Assets\Lang\language_pack.xml" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player.cs" Line="200" Column="29" />
       <File FileName="Assets\Scripts\LanguageControl.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\TooltipControl.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Card.cs" Line="1" Column="1" />

@@ -63,6 +63,9 @@ public class GameControl : MonoBehaviour {
 	
 	public List<ArmyOrderTxt> armyOrderIconPack = new List<ArmyOrderTxt>();
 
+	//list of orders blocked for this turn
+	public List<Player.ArmyOrders> blockedTypeOfOrders = new List<Player.ArmyOrders>();
+
 
 	// Use this for initialization
 	void Start () {
@@ -138,10 +141,10 @@ public class GameControl : MonoBehaviour {
 		    roundPhase == RoundPhases.rp_Marches || 
 		    roundPhase == RoundPhases.rp_Consolidate) showPlayer = true;
 
-		//reset raven token at a start of new round
+		//at start of new round recalculate each player
 		if (roundPhase == RoundPhases.rp_WesterosCards) {
 			foreach (Player p in players) {
-				p.refreshRavenTokenState();
+				p.newRound();
 			}
 		}
 
